@@ -14,6 +14,7 @@ const helmet = require("helmet");
 const compression = require("compression");
 const morgan = require("morgan");
 
+require("dotenv").config();
 console.log(process.env.NODE_ENV);
 const MONGODB_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.zopmxhi.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE}`;
 
